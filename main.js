@@ -100,8 +100,26 @@ const getRandomColor = () => {
     return color;
   }
 
-
+  $(".circled").css("background-color",getRandomColor());
+//   $(".circled-place").mo(function () {
+//           // over
+//           console.log("Sdfs")
+          
+//       }, function () {
+//         console.log("Sdsadadfs")
+//       }
+//   );
   
+  $(".circled").hover(function () { 
+    $(this).css("opacity","0.3")
+  },
+  function () {
+    $(this).css("opacity","1")
+  }
+  
+  );
+
+
 
 });
 
