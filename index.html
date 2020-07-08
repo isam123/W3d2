@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"  crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+    <p class="bg-dark p-3 h3 text-white text-center">Circle anim</p>
+
+    <div class="row mt-5">
+        <div class="col-sm-4">
+            <div class="control p-2">
+            <div class="bg-dark  text-center"><h5 class=" text-white label  p-3">Controls</h5></div>
+            <div class="form-hold">
+            <form id="tform">
+            <div class="mt-2">
+                <label class="font-weight-normal">Width</label>
+                <input  class="form-control" name="Cwidth" placeholder="set the pixel value" type="number">
+            </div>
+            <div class="mt-2">
+                <label class="font-weight-normal">Growth Amount</label>
+                <input  class="form-control" name="Cgamount" type="number">
+            </div>
+            <div class="mt-2">
+                <label class="font-weight-normal">Growth Rate</label>
+                <input  class="form-control" name="Cgrate" type="number">
+            </div>
+            <div class="mt-2">
+                <label class="font-weight-normal">Number Circles</label>
+                <input  class="form-control" name="Cnumcircle" type="number">
+            </div>
+            <button class="mt-2  btn btn-lg btn-dark">Start</button>
+        </form>
+    </div>
+            </div>
+            
+        </div>
+        <div class="col-sm-8 circle-place">
+            <div class="circled bg-success">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="d-none circled bg-success" id="start">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" 
+    crossorigin="anonymous"></script>
+    <!-- <script src="main.js"> </script> -->
+    <script >
+
+        $(document).ready(function() {
+
+            var obj = $(".circled");
+            console.log(obj)
+        })
+    </script>
+</body>
+</html>
